@@ -1,0 +1,156 @@
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+    background-color: #C2AB99;
+}
+
+
+nav {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    display: flex;
+    gap: 15px;
+}
+
+.team-wrapper {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+.team-item {
+    background-color: #D1BBAA;
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
+
+.team-item:hover {
+    transform: scale(1.1); 
+    background-color: #ede0d4; 
+    box-shadow: 0 0 25px 10px rgba(255, 165, 0, 0.7); 
+}
+
+.team-item h2 {
+    margin: 0 0 10px 0;
+    color: #5D4229;
+}
+
+.team-item p {
+    margin: 0;
+    color: #6d4c3d;
+    font-weight: bold;
+}
+
+.nav-item {
+    background: rgba(255,255,255,0.2);
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    color: white;
+    transition: 0.3s;
+}
+
+.nav-item:hover { background: #5D4229; }
+
+
+header {
+    height: 100vh;
+    background: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1920') no-repeat center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.arrow-next {
+    font-size: 3em;
+    cursor: pointer;
+    margin-top: 20px;
+    animation: bounce 2s infinite;
+}
+
+
+.section-compact {
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-wrapper { width: 80%; }
+.about-content { display: flex; align-items: center; gap: 30px; }
+
+
+.zoom-effect {
+    max-width: 100%;
+    border-radius: 10px;
+    transition: transform 0.4s ease;
+    cursor: pointer;
+}
+
+.zoom-effect:hover {
+    transform: scale(1.1);
+}
+
+.team-wrapper {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.team-item {
+    background: #D1BBAA;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.quest-footer {
+    background-color: #5D4229; 
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.quest-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 15px 45px;
+    background-color: #D1BBAA; 
+    color: #5D4229;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: 0.3s;
+    font-size: 1.2em;
+}
+
+.quest-btn:hover {
+    background-color: white;
+    transform: translateY(-3px);
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+    40% {transform: translateY(-10px);}
+    60% {transform: translateY(-5px);}
+}
