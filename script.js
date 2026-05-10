@@ -11,12 +11,6 @@ document.querySelector('.arrow-next').addEventListener('click', () => {
     window.scrollTo({ top: window.innerHeight, behavior: 'smooth' });
 });
 
-const questBtn = document.getElementById('start-quest');
-questBtn.addEventListener('click', (e) => {
-    e.preventDefault();
-    console.log("Квест розпочато!");
-    alert("Квест готується до запуску! Ви готові до Марса?");
-});
 
 document.querySelector('.mars1').addEventListener('click', () => {
     document.querySelectorAll('.mars').forEach(item => {
